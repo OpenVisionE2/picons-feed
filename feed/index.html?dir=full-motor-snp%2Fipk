@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="description" content="Openpicons">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" href="app/assets/images/favicon.dark.png">
+<link rel="stylesheet" href="app/assets/app.css?id=c2c414e936f530f2adc7">
+
+
+
+<title>full-motor-snp/ipk &bull; Openpicons</title>
+
+<div id="app" class="flex flex-col min-h-screen font-sans dark-mode">
+        <header id="header" class="bg-blue-600 shadow sticky top-0">
+    <div class="container flex justify-between flex-wrap items-center mx-auto p-4 md:flex-row">
+        <div class="flex-1 font-mono text-white text-sm tracking-tight overflow-x-auto whitespace-no-wrap py-1">
+            <a href="." class="inline-block hover:underline">
+                Picons
+            </a>
+
+                                                / <a href="?dir=full-motor-snp" class="inline-block hover:underline">full-motor-snp</a>
+                                    / <a href="?dir=full-motor-snp/ipk" class="inline-block hover:underline">ipk</a>
+                                    </div>
+
+        <button class="inline-block text-white mx-2 hover:text-gray-400 md:hidden" v-on:click="toggleMenuVisibility">
+            <div v-if="menuOpen">
+                <i class="fas fa-times fa-lg fa-fw"></i>
+            </div>
+            <div v-else>
+                <i class="fas fa-ellipsis-v fa-lg fa-fw"></i>
+            </div>
+        </button>
+
+        <div class="flex items-center flex-grow flex-shrink-0 w-full pt-4 space-x-2 md:flex md:max-w-xs md:p-0" v-bind:class="menuStyles">
+            
+            <div class="flex-1">
+                <form id="search" action="." method="get" class="group relative block bg-blue-700 rounded-full shadow-inner">
+    <input type="text" value="" name="search" placeholder="Search..."
+        class="bg-transparent placeholder-gray-900 text-white w-full px-10 py-2"
+        ref="searchInput" v-on:focus="$event.target.select()"
+    >
+
+    <div class="flex items-center absolute left-0 inset-y-0 ml-2 pointer-events-none">
+        <div class="flex justify-center items-center text-blue-900 w-6 h-6">
+            <i class="fas fa-search fa-fw"></i>
+        </div>
+    </div>
+
+
+    </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="content" class="flex flex-col flex-grow container mx-auto px-4">
+        <div class="my-4">
+            <div class="flex justify-between font-bold p-4">
+                <div class="flex-grow font-mono mr-2">
+                    File Name
+                </div>
+
+                <div class="font-mono text-right w-1/6 mx-2 hidden sm:block">
+                    Size
+                </div>
+
+                <div class="font-mono text-right w-1/4 ml-2 hidden sm:block">
+                    Date
+                </div>
+            </div>
+
+            <ul id="file-list">
+                <li>
+                                            <a
+    href="?dir=full-motor-snp"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-level-up-alt fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            ..
+        </div>
+
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                                —
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            —
+        </div>
+    </div>
+</a>
+
+                                    </li>
+
+                <li>
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.blue_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.blue_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.dark.on.blue_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            20.19MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.reflection_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.reflection_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.dark.on.reflection_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            21.90MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.dark.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            16.54MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.white_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.dark.on.white_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.dark.on.white_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            18.01MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.light.on.black_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.light.on.black_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.light.on.black_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            20.56MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.100x60-86x46.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.100x60-86x46.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.100x60\u002D86x46.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            16.41MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.blue_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.blue_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.dark.on.blue_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            42.09MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.reflection_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.reflection_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.dark.on.reflection_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            48.49MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.dark.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            33.25MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.white_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.dark.on.white_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.dark.on.white_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            36.78MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:01
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.light.on.black-er_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.light.on.black-er_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.light.on.black\u002Der_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            40.36MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.light.on.black_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.light.on.black_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.light.on.black_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            43.36MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-190x102.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-190x102.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D190x102.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            33.11MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-220x132.dark.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-220x132.dark.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D220x132.dark.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            40.02MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.220x132-220x132.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.220x132-220x132.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.220x132\u002D220x132.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            39.86MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.400x170-370x140.dark.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.400x170-370x140.dark.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.400x170\u002D370x140.dark.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            55.32MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.400x240-370x210.dark.on.blue_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.400x240-370x210.dark.on.blue_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.400x240\u002D370x210.dark.on.blue_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            85.42MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.400x240-370x210.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.400x240-370x210.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.400x240\u002D370x210.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            69.40MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:02
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.400x240-400x240.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.400x240-400x240.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.400x240\u002D400x240.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            77.85MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:03
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.800x450-760x410.dark.on.white_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.800x450-760x410.dark.on.white_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.800x450\u002D760x410.dark.on.white_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            184.37MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:03
+        </div>
+    </div>
+</a>
+
+                                            <a
+    href="full-motor-snp/ipk/enigma2-plugin-picons-snp-full.800x450-760x410.light.on.transparent_2023-05-12--21-32-34_all.ipk"
+    class="flex flex-col items-center rounded-lg font-mono group hover:bg-gray-200 hover:shadow"
+>
+    <div class="flex justify-between items-center p-4 w-full">
+        <div class="pr-2">
+                            <i class="fas fa-file fa-fw fa-lg"></i>
+                    </div>
+
+        <div class="flex-1 truncate">
+            enigma2-plugin-picons-snp-full.800x450-760x410.light.on.transparent_2023-05-12--21-32-34_all.ipk
+        </div>
+
+                    <div class="ml-2">
+                <button
+                    title="File Info"
+                    class="flex justify-center items-center rounded-full p-2 -m-1 md:invisible hover:bg-gray-400 hover:shadow group-hover:visible"
+                    v-on:click.prevent="showFileInfo('full\u002Dmotor\u002Dsnp\/ipk\/enigma2\u002Dplugin\u002Dpicons\u002Dsnp\u002Dfull.800x450\u002D760x410.light.on.transparent_2023\u002D05\u002D12\u002D\u002D21\u002D32\u002D34_all.ipk')"
+                >
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        
+        <div class="hidden whitespace-no-wrap text-right mx-2 w-1/6 sm:block">
+                            169.36MB
+                    </div>
+
+        <div class="hidden whitespace-no-wrap text-right truncate ml-2 w-1/4 sm:block">
+            13-05-2023 09:00:03
+        </div>
+    </div>
+</a>
+
+                                    </li>
+            </ul>
+        </div>
+
+            </div>
+
+    <footer class="container border-t-2 border-gray-800 text-center mx-auto px-4 py-8">
+</footer>
+
+    <div class="fixed bottom-0 left-0 right-0 pointer-events-none">
+    <div class="container flex justify-end mx-auto px-4 py-10">
+        <button id="scroll-to-top" ref="scrollToTop"  title="Scroll to Top"
+            class="flex justify-center items-center w-12 h-12 right-0 rounded-full shadow-lg bg-blue-600 text-white cursor-pointer pointer-events-auto hover:bg-blue-700 hidden"
+            onclick="window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });"
+        >
+            <i class="fas fa-arrow-up fa-lg"></i>
+        </button>
+    </div>
+</div>
+    <file-info-modal ref="fileInfoModal"></file-info-modal>
+</div>
+
+<script src="app/assets/app.js?id=9c62bf1d7798728d04eb" defer></script>
