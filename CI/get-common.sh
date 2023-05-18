@@ -4,11 +4,11 @@ cd feed
 find . -name '*.ipk' -type f | xargs rm -f
 find . -name '*Packages*' -type f | xargs rm -f
 
-wget -c -nH -r -q -l0 -A ipk -np -nd --wait=3 --execute="robots = off" https://openpicons.com/picons/?dir=full-motor-snp
-wget -c -nH -r -q -l0 -A ipk -np -nd --wait=3 --execute="robots = off" https://openpicons.com/picons/?dir=full-motor-srp
+wget -c -nH -r -q -l0 -A ".ipk" -np -nd --wait=3 --execute="robots = off" https://openpicons.com/picons/?dir=full-motor-snp/ipk
+wget -c -nH -r -q -l0 -A ".ipk" -np -nd --wait=3 --execute="robots = off" https://openpicons.com/picons/?dir=full-motor-srp/ipk
 
 rename 'y/A-Z/a-z/' *.ipk
-find . -name '*html*' -type f | xargs rm -f
+#find . -name '*html*' -type f | xargs rm -f
 
 find . -name '*.ipk' -size +98M | xargs rm -f
 chmod 755 IPKFeedGenerator.jar
